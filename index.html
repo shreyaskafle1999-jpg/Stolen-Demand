@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stolen Demand - Scale Your Business with Meta Ads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0f0f0f;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo-container {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-container img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #f5f5f5;
+            line-height: 1.2;
+        }
+
+        .subheading {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .benefits {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .benefit-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .benefit-icon {
+            color: #4a9eff;
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .benefit-text {
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+
+        .form-section {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 40px 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #4a9eff;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 16px;
+            background: #0f0f0f;
+            border: 1px solid #3a3a3a;
+            border-radius: 6px;
+            color: #f5f5f5;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input::placeholder {
+            color: #666;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4a9eff;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px 24px;
+            background: #4a9eff;
+            color: #0f0f0f;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #3a8eef;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .footer a:hover {
+            color: #999;
+            text-decoration: underline;
+        }
+
+        .cta-text {
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .subheading {
+                font-size: 16px;
+            }
+
+            .logo-container img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png.jpeg" alt="Stolen Demand">
+        </div>
+
+        <h1>Scale Your Business Across Meta</h1>
+        <p class="subheading">Apply for a strategy consultation. We'll review your campaigns and show you exactly what's working (and what's not).</p>
+
+        <div class="benefits">
+            <div class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <div class="benefit-text">Strategy review of your current campaigns</div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <div class="benefit-text">Identify untapped growth opportunities</div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <div class="benefit-text">Specific, actionable recommendations</div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-title">Apply for a Strategy Consultation</div>
+            <form id="auditForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Your company/brand">
+                </div>
+                <button type="submit">Apply Now</button>
+            </form>
+            <p class="cta-text">We review qualified applications and reach out to schedule your strategy call.</p>
+        </div>
+
+        <div class="footer">
+            We respect your privacy. No spam, ever. Unsubscribe anytime.<br><br>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="data-protection.html">Data Protection</a> | 
+            <a href="terms-conditions.html">Terms & Conditions</a> | 
+            <a href="earnings-disclaimer.html">Earnings Disclaimer</a> | 
+            <a href="gdpr.html">GDPR</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('auditForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const company = document.querySelector('input[name="company"]').value;
+
+            fetch('https://formspree.io/f/mwlejyql', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    company: company
+                })
+            }).then(response => {
+                if (response.ok) {
+                    alert('Thanks! We got your application and will be in touch soon.');
+                    document.getElementById('auditForm').reset();
+                } else {
+                    alert('Something went wrong. Try again or email us directly.');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                alert('Error sending. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
